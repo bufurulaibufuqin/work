@@ -1,0 +1,34 @@
+---------------------------------------------------------------
+[ 2017-10-27T11:41:25+08:00 ] 127.0.0.1 127.0.0.1 GET /
+[ info ] www.work.com/ [运行时间：0.081500s][吞吐率：12.27req/s] [内存消耗：2,982.06kb] [文件加载：60]
+[ info ] [ LANG ] C:\Users\Administrator\Desktop\www\work\thinkphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:56.0) Gecko/20100101 Firefox/56.0',
+  'host' => 'www.work.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\book\controller\Index->index[ C:\Users\Administrator\Desktop\www\work\thinkphp\application\book\controller\Index.php ]
+[ info ] [ VIEW ] C:\Users\Administrator\Desktop\www\work\thinkphp\public/../application/book\view\index\index.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;port=3306;dbname=my;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book_type` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT `name` FROM `book_type` WHERE  `is_del` = 0 ORDER BY `sort`  desc [ RunTime:0.000500s ]
