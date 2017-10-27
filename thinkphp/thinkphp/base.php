@@ -40,20 +40,20 @@ define('IS_WIN', strpos(PHP_OS, 'WIN') !== false);
 // 载入Loader类
 require CORE_PATH . 'Loader.php';
 
-$ini_path = php_ini_loaded_file();
-$ini_vars_arr = parse_ini_file($ini_path, true);
-
-if(!isset($ini_vars_arr['dms']['env'])){
-    exit('Missing enviroment config');
-}
-define('ENVIRONMENT', $ini_vars_arr['dms']['env']);
-if(!in_array(ENVIRONMENT, array(
-    'development',//开发
-    'testing',//测试
-    'production',//生产
-    ))){
-    exit("Error enviroment config ".ENVIRONMENT." not exists");
-}
+//$ini_path = php_ini_loaded_file();
+//$ini_vars_arr = parse_ini_file($ini_path, true);
+//
+//if(!isset($ini_vars_arr['dms']['env'])){
+//    exit('Missing enviroment config');
+//}
+//define('ENVIRONMENT', $ini_vars_arr['dms']['env']);
+//if(!in_array(ENVIRONMENT, array(
+//    'development',//开发
+//    'testing',//测试
+//    'production',//生产
+//    ))){
+//    exit("Error enviroment config ".ENVIRONMENT." not exists");
+//}
 
 // 加载环境变量配置文件
 if (is_file(ROOT_PATH . '.env')) {
