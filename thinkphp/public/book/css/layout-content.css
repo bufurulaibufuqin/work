@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #ec3750;
+}
+.layout_top{
+    line-height: 35px;
+    width:100%;
+    background-color:#f7f7f7;
+    border-bottom:1px solid #e5e5e5;
+}
+.layout_top_centre{
+    margin-left: 360px;
+    width: 1200px;
+}
+.layout_top_centre p{
+    margin-left: 15px;
+    color: #575757;
+}
+.layout_top_left{
+    float: left;
+    margin-right: 950px;
+}
+.layout_top_right_login{
+    color:#262626;
+}
+.layout_top_right_register{
+    color: #a6a6a6;
+}
+.layout_nav{
+    width: 1200px;
+    height: 85px;
+    /*background-color: red;*/
+}
+
