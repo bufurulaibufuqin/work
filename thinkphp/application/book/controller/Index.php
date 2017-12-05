@@ -2,7 +2,7 @@
 namespace app\book\controller;
 
 use app\book\model\BookType;
-use face\AipFace;
+use ai\AipFace;
 use think\Controller;
 use think\Request;
 

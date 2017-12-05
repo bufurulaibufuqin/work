@@ -21,12 +21,6 @@ class BookType extends Model {
      * @return array
      * @author wangxuegang
      */
-    /**
-     * @param array $field
-     * @param $where
-     * @param $order
-     * @return array
-     */
     public function getInfo($field=array(),$where=array(),$order=array()){
         $res = $this->where($where)->field($field)->order($order)->select();
         if (empty($res)) {

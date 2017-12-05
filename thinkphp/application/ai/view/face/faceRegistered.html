@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户列表</title>
+</head>
+<body>
+<table border="1">
+    {volist name="user" id="vo"}
+    <tr>
+        <td>{$vo.admin_id}</td>
+        <td>{$vo.admin_show_name}</td>
+        <td>
+            <form action="/ai/face/faceRegistered" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+                <input type="hidden" value="{$vo.admin_show_name}" name="admin_show_name">
+                <input type="file" name="face">
+                <input type="submit" value="补充人脸图像">
+            </form>
+        </td>
+        <td>
+            <form action="/ai/face/FaceAuthentication" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+                <input type="file" name="face">
+                <input type="submit" value="人脸登录">
+
+            </form>
+        </td>
+        <td>
+            <form action="/ai/face/FaceToUpdate" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+                <input type="hidden" value="{$vo.admin_show_name}" name="admin_show_name">
+                <input type="file" name="face">
+                <input type="submit" value="人脸图像更新">
+            </form>
+        </td>
+        <td>
+            <form action="/ai/face/FaceToDelete" method="post">
+            <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+            <input type="submit" value="人脸删除">
+        </form>
+        </td>
+        <td>
+            <form action="/ai/face/faceUserInfo" method="post">
+            <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+            <input type="submit" value="用户信息查询">
+        </form>
+        </td>
+        <td>
+            <form action="/ai/face/faceDelGroupUser" method="post">
+                <input type="hidden" value="{$vo.admin_id}" name="admin_id">
+                <input type="submit" value="组内删除用户">
+            </form>
+        </td>
+    </tr>
+    {/volist}
+</table>
+</body>
+</html>

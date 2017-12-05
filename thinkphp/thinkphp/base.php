@@ -33,6 +33,10 @@ defined('ENV_PREFIX') or define('ENV_PREFIX', 'PHP_'); // 环境变量的配置�
 define('FACE_APP_ID','10283335');//人脸识别APP_ID
 define('FACE_API_KEY','mrSt2sNzxkGIOuPIVi2g5iEM');//人脸识别API_KEY
 define('FACE_SECRET_KEY','T5M3L0LGAiEjwv7WYp9MvHgZMBB9UEN8');//人脸识别SECRET_KEY
+
+define('AI_APP_ID','10292909');//AI APP_ID
+define('AI_API_KEY','iUyG3ilotP25FZFwyah1uCZL');//AI API_KEY
+define('AI_SECRET_KEY','spc1TeBKzi461tKSGIXL4ArcEG31ynp1');//AI SECRET_KEY
 // 环境常量
 define('IS_CLI', PHP_SAPI == 'cli' ? true : false);
 define('IS_WIN', strpos(PHP_OS, 'WIN') !== false);
